@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Burger(Pvt)Ltd </title>
+    @*@Styles.Render("~/Content/css")*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/MainLayout.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0./css/font-awesome.min.css"/>
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="logo">
+                    <a class="navbar-brand" href="#"> <img src="../Images/logo.png" alt="logo" style="width:60px;"></a>
+                    <h1><a href="#">E-<span>Burger</span></a></h1>
+
+                    <p>Burger Paradise</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="account">
+                    <ul>
+                        <li>
+                            <div class="hidden-xs">
+                                <h4><a>Call Us</a></h4>
+                                <p>2227979</p>
+                            </div>
+                            <div class="visible-xs">
+                                <p>2227979</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav-menus">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a style="border-radius:initial;" href="#">Home</a></li>
+                        <li><a style="border-radius:initial;" href="#">Location</a></li>
+                        <li><a style="border-radius:initial;" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <div class="container">
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-12 copyright">
+                    <div class="col-md-6 col-sm-6 copyright-left">
+                        <p>&copy; @DateTime.Now.Year - All right Reserved by LMN Pvt Ltd</p>
+                        <i class="fa fa-cc-amex" style="font-size: 24px;color:blue"></i>
+                        <i class="fa fa-cc-mastercard" style="font-size: 24px;color:blue"></i>
+                        <i class="fa fa-cc-visa" style="font-size: 24px;color:blue"></i>
+                        <i class="fa fa-cc-paypal" style="font-size: 24px;color:blue"></i>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 copyright-right">
+                        <ul class="list-unstyled list-social">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
